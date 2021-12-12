@@ -72,6 +72,52 @@ public class Rational {
 	
 	public static Rational ShumaThyesore(Rational th1, Rational th2)
 	{
+				
+		int denominatorRi=th1.denominator* th2.denominator;
+		int numeratorRi= th1.numerator*th2.denominator+ th2.numerator*th1.denominator;
+		
+		Rational shuma=new Rational(numeratorRi, denominatorRi);
+		
+		return shuma;
+		
+	}
+	
+	//b) Subtract two Rational numbers: The result of the subtraction should be stored in reduced
+	//form. Implement this as a static method.
+	public static Rational ZbritjaThyesore(Rational th1, Rational th2)
+	{
+				
+		int denominatorRi=th1.denominator* th2.denominator;
+		int numeratorRi= th1.numerator*th2.denominator- th2.numerator*th1.denominator;
+		
+		Rational zbritje=new Rational(numeratorRi, denominatorRi);
+		
+		return zbritje;
+		
+	}
+	//c) Multiply two Rational numbers: The result of the multiplication should be stored in
+	//reduced form. Implement this as a static method.
+	
+	public static Rational shumezimThyesash(Rational th1, Rational th2)
+	{
+		int numeratorRi=th1.numerator* th2.numerator;
+		int denominatorRi=th1.denominator* th2.denominator;
+		
+		return new Rational(numeratorRi, denominatorRi);
+				
+		
+	}
+	
+	//d) Divide two Rational numbers: The result of the division should be stored in reduced
+	//form. Implement this as a static method.
+	
+	public static Rational pjesetimThyesash(Rational th1, Rational th2)
+	{	int temp=th2.numerator;
+		th2.numerator=th2.denominator;
+		th2.denominator=temp;
+		
+		return shumezimThyesash(th1, th2);
+		
 		
 	}
 	

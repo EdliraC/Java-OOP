@@ -25,6 +25,30 @@ public class RationalTest {
 		
 		System.out.println(numerThyesor3);
 		System.out.println(numerThyesor3.toString(3));
-				
+		
+		//te testojme shumen e dy numrave thyesore numerThyesor2+numerThyesor3
+		
+		Rational shumeThyesash=new Rational();
+		System.out.println(shumeThyesash.ShumaThyesore(numerThyesor2, numerThyesor3));
+		
+		Rational th1=new Rational(8, 3);
+		Rational th2= new Rational(2, 4);
+		//metoda ShumaThyesore() eshte statike
+		System.out.println(Rational.ShumaThyesore(th1, th2));
+		
+		//testojme zbritje thyesore	
+		Rational zbritjeThyesash=new Rational();
+		System.out.println(zbritjeThyesash.ZbritjaThyesore(numerThyesor2, numerThyesor3));
+		
+		
+		//metoda ShumaThyesore() eshte statike
+		System.out.println(Rational.ZbritjaThyesore(th1, th2));
+		
+		//testojme shumezim thyesash
+		System.out.println(Rational.shumezimThyesash(th1, th2));
+		
+		
+		//testojme pjesetim thyesash
+		System.out.println(Rational.pjesetimThyesash(th1, th2));
 	}
 }
