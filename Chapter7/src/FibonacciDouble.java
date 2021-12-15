@@ -1,3 +1,11 @@
+
+//Modify the application you wrote in part (a) to use double instead of int to calculate
+//and return Fibonacci numbers, and use this modified application to repeat part (b).
+//	Determine the largest Fibonacci number that can be displayed on your system.
+//c) Modify the application you wrote in part (a) to use double instead of int to calculate
+//and return Fibonacci numbers, and use this modified application to repeat part (b).
+
+
 import java.util.Scanner;
 
 public class FibonacciDouble {
@@ -29,5 +37,5 @@ public class FibonacciDouble {
 			return fibonacci[nrKufize-1];
 	}
 
-}
+}//f(1400) kufiza me e madhe qe mudn te shfaqet ne kete seri me numra me presje ~1.057E292
 
