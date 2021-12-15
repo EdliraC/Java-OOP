@@ -33,4 +33,4 @@ public class Fibonacci {
 			return fibonacci[nrKufize-1];
 	}
 
-}//f(47) kufiza me e madhe e kesaj serie me numra te plote
+}//f(47) kufiza me e madhe e kesaj serie me numra te plote f(47)=1836311903
