@@ -1,3 +1,7 @@
+//Write a method fibonacci( n ) that calculates the nth Fibonacci number. Incorporate
+//this method into an application that enables the user to enter the value of n.
+//b) Determine the largest Fibonacci number that can be displayed on your system.
+
 import java.util.Scanner;
 
 public class Fibonacci {
@@ -29,4 +33,4 @@ public class Fibonacci {
 			return fibonacci[nrKufize-1];
 	}
 
-}
+}//f(47) kufiza me e madhe e kesaj serie me numra te plote
