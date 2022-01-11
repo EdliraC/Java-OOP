@@ -34,7 +34,15 @@ public double getWeeklySalary() {return weeklySalary;}
 
 // calculate earnings; override abstract method earnings in Employee
 @Override                                                           
-public double earnings() {return getWeeklySalary();}                
+public double earnings() {
+	double bonus;
+	if(getBirthdate().getMonth()==1)
+		bonus=100;
+	else
+		bonus=0;
+	
+	return getWeeklySalary()+ bonus;}                
+               
 
 // return String representation of SalariedEmployee object  
 @Override                                                   
