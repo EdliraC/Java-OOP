@@ -36,7 +36,7 @@ public double getWeeklySalary() {return weeklySalary;}
 @Override                                                           
 public double earnings() {
 	
-	return getWeeklySalary()+ bonus;}                
+	return getWeeklySalary();}                
                
 
 // return String representation of SalariedEmployee object  
