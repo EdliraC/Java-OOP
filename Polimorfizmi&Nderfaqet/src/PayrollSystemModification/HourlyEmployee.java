@@ -54,17 +54,13 @@ public double getHours() {return hours;}
 @Override                                                           
 public double earnings() { 
 	
-	double bonus;
-	if(getBirthdate().getMonth()==1)
-		bonus=100;
-	else
-		bonus=0;
+	
 	
    if (getHours() <= 40) { // no overtime                           
-      return getWage() * getHours()+bonus;                                
+      return getWage() * getHours();                                
    }                                                                
    else {                                                           
-      return 40 * getWage() + (getHours() - 40) * getWage() * 1.5+ bonus;  
+      return 40 * getWage() + (getHours() - 40) * getWage() * 1.5;  
    }                                                                
 }                                                                  
 
