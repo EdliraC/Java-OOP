@@ -52,14 +52,17 @@ public double getHours() {return hours;}
 
 // calculate earnings; override abstract method earnings in Employee
 @Override                                                           
-public double earnings() {                                          
+public double earnings() { 
+	
+	
+	
    if (getHours() <= 40) { // no overtime                           
       return getWage() * getHours();                                
    }                                                                
    else {                                                           
       return 40 * getWage() + (getHours() - 40) * getWage() * 1.5;  
    }                                                                
-}                                                                   
+}                                                                  
 
 // return String representation of HourlyEmployee object              
 @Override                                                             
