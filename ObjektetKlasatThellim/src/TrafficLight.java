@@ -18,7 +18,7 @@ public enum TrafficLight {
 	
 	public int gjejKohezgjatje()
 	{
-		return this.kohezgjatjaSek;
+		return kohezgjatjaSek;
 	}
 
 }
